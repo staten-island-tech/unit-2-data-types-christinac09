@@ -24,9 +24,8 @@ print(y)
 print(z) """
 
 
-message = "please input a sentence"        # word counter with user input
-print(message)
-input = input()
+# word counter with user input
+input = input("please input a sentence: ")
 words = input.split( )
 print(len(words))
 
