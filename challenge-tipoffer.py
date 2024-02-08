@@ -21,5 +21,22 @@ if service == "okay":
         tip = percent * bill
 
 
+if service == "good":
+    if input("tip 20%? yes or no") == "yes":
+        tip = 0.20 * bill
+    else: 
+        percent = int(input("enter tip percentage: ")) / 100
+        tip = percent * bill
+
+
+if service == "great":
+    if input("tip 25%? yes or no") == "yes":
+        tip = 0.25 * bill
+    else: 
+        percent = int(input("enter tip percentage: ")) / 100
+        tip = percent * bill
+
+
+
 total = bill + tip
 print(f"your total is ${total}")
