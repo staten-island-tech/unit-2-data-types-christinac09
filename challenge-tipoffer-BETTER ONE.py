@@ -7,22 +7,16 @@ service = input("how was the service? bad, okay, good, or great: ")
 
 if service == "bad":
     tip = 0
-
-
-if service == "okay":
+elif service == "okay":
     tip = 0.15
-
-
-if service == "good":
+elif service == "good":
     tip = 0.20
-
-
-if service == "great":
+elif service == "great":
     tip = 0.25
 
 
 
-if input(f"tip {100 * tip}%? yes or no") == "yes":
+if input(f"tip {100 * tip}%? yes or no: ") == "yes":
     total = tip * bill + bill
 else: 
     percent = int(input("enter tip percentage (exclude percent sign): ")) / 100
