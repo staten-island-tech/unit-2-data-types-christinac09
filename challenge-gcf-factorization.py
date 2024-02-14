@@ -14,18 +14,20 @@ for i in range(1,b+1):
     if b%(i) == 0:
         b_factors.append(i)
 
-print(a_factors)
-print(b_factors)
+print(f"factors of a: {a_factors}")
+print(f"factors of b: {b_factors}")
 
 factors = []
 
 def check_factors(x,y):
-    if(x == i and y == i):
-        print("yes")
+    if (i in x) and (i in y):
+        print("yes common factor")
+        factors.append(i)
     else: 
-        print("only 1 or 0 are 4")
+        print("not common factor")
 
 for i in (a_factors):
     check_factors(a_factors,b_factors)
 
-print(factors)
+print(f"all common factors of {a} and {b} are {factors}")
+print(f"Greatest common factor is {factors[-1]}")
